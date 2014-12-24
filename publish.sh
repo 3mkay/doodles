@@ -10,8 +10,9 @@ sculpin generate --env=prod
 git stash
 git checkout gh-pages
 
+find . -path './output_prod' -prune -o -path './.*' -prune -o -path 'CNAME' -prune -o -path './app' -prune -o -name '*' -print | xargs rm -Rf
 cp -R output_prod/* .
-rm -rf output_*
+rm -rf output_prod
 
 git add *
 git commit -m "$1"
