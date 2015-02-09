@@ -3,6 +3,5 @@ layout: default
 title: About
 
 ---
-# About the Author or Blog
+# Some doodles, that's it
 
-Here is a little information about the author or the blog.
